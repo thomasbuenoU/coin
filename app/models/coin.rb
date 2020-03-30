@@ -1,3 +1,3 @@
 class Coin < ApplicationRecord
-    belongs_to :mining_type # deixa armazenado na table mining_type
+    belongs_to :mining_type #, optional: true 
 end
