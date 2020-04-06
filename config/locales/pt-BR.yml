@@ -1,5 +1,9 @@
 pt-BR:
-  actual_locale: "Português"
+  current_locale: "Português"
+  welcome: "Seja bem vindo!"
+  messages:
+    welcome: "Este é o crypto wallet, aqui você pode registrar suas criptomoedas"
+    menu: "Registre sua cryptomoeda ou o tipo de mineração"
   hello: "Olá mundo"
   links:
     edit: "Editar"

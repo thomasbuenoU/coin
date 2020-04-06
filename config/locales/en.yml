@@ -1,5 +1,9 @@
 en:
-  actual_locale: "English"
+  current_locale: "English"
+  welcome: "Welcome"
+  messages:
+    welcome: "This is the crypto wallet, here you can register your virtual currencies"
+    menu: "Register your currency or type of mining"
   hello: "Hello world"
   links:
     edit: "Edit"

@@ -1,2 +1,2 @@
-<a><%= link_to "Coins", coins_path, class:"btn btn-warning", role:"button"%></a>
-<a><%= link_to "Type of mining", mining_types_path, class:"btn btn-dark", role:"button"%></a>
+<a><%= link_to "#{Coin.model_name.human}", coins_path, class:"btn btn-warning", role:"button"%></a>
+<a><%= link_to "#{MiningType.model_name.human}", mining_types_path, class:"btn btn-dark", role:"button"%></a>
