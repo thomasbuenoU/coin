@@ -1,18 +1,7 @@
-<p>
-    <%= link_to 'Idioma em português', root_path(locale: 'pt-BR') %>
-</p>
-
-<p>
-    <%= link_to 'English language', root_path(locale: 'en') %>
-</p>
-<h1>Seja bem vindo!</h1>
-<p> The language used in the application is: <strong> <%= t('actual_locale') %> </strong></p>
-<%= render "date" %>
-<ul>
-    <li><%= link_to "Register new coins", coins_path %></li>
-    <li><%= link_to "Type of mining", mining_types_path %></li>
-
-    <p>you are in <%= environment_rails %>!</p>
-
-    <p>My name is <%= @name_get %></p>
-</ul>
+<div class="jumbotron">
+  <h1 class="display-4">Welcome</h1>
+  <p class="lead">This is the crypto wallet, here you can register your virtual currencies</p>
+  <hr class="my-4">
+  <p>Register your currency or type of mining</p>
+  <%= render "menu" %>
+</div>
