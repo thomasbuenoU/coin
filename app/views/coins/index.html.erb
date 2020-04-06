@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Coins</h1>
+<h1><%= Coin.model_name.human %></h1>
 
 <table class="table table-hover">
   <thead>
@@ -18,9 +18,9 @@
         <td><%= coin.description %></td>
         <td><%= coin.acronym %></td>
         <td><%= image_tag coin.url_image, width:30, height:30 %></td>
-        <td><%= link_to t('links.show'), coin %></td>
-        <td><%= link_to t('links.edit'), edit_coin_path(coin) %></td>
-        <td><%= link_to t('links.delete'), coin, method: :delete, data: { confirm: t('links.confirm') } %></td>
+        <td><%= link_to t('links.show'), coin , class:"btn-sm btn-info"%></td>
+        <td><%= link_to t('links.edit'), edit_coin_path(coin), class:"btn-sm btn-warning" %></td>
+        <td><%= link_to t('links.delete'), coin, method: :delete, data: { confirm: t('links.confirm') }, class:"btn-sm btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,6 +28,6 @@
 
 <br>
 
-<%= link_to 'New Coin', new_coin_path %>
+<%= link_to t('links.new.coin'), new_coin_path, class:"btn btn-primary" %>
 
-<%= link_to 'Back', root_path%>
+<%= link_to t('links.back'), root_path, class:"btn btn-secondary" %>
